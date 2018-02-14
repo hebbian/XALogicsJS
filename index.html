@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logic</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="scripts/Utility.js"></script>
+    <!-- Logic 1 -->
+    <script src="scripts/Logic1/Soal01.js"></script>
+    <script src="scripts/Logic1/Soal02.js"></script>
+    <script src="scripts/Logic1/Soal03.js"></script>
+    <script src="scripts/Logic1/Soal04.js"></script>
+    <script src="scripts/Logic1/Soal05.js"></script>
+    <script src="scripts/Logic1/Soal06.js"></script>
+    <script src="scripts/Logic1/Soal07.js"></script>
+    <script src="scripts/Logic1/Soal08.js"></script>
+    <script src="scripts/Logic1/Soal09.js"></script>
+    <script src="scripts/Logic1/Soal10.js"></script>
+    <script src="scripts/Logic1/SoalPostTest.js"></script>
+    <script src="scripts/Logic1/SoalPR.js"></script>
+
+    <!-- Logic 2 -->
+    <script src="scripts/Logic2/Soal01.js"></script>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Hello world, I'm learning Javascript</h1>
+    <label>Logic : </label>
+    <select id="input-logic">
+        <option value="1">Logic 1</option>
+        <option value="2">Logic 2</option>
+        <option value="3">Logic 3</option>
+    </select>
+    <label>Soal : </label>
+    <select id="input-soal">
+        <option value="1">Soal 1</option>
+        <option value="2">Soal 2</option>
+        <option value="3">Soal 3</option>
+        <option value="4">Soal 4</option>
+        <option value="5">Soal 5</option>
+        <option value="6">Soal 6</option>
+        <option value="7">Soal 7</option>
+        <option value="8">Soal 8</option>
+        <option value="9">Soal 9</option>
+        <option value="10">Soal 10</option>
+        <option value="11">Soal Post Test</option>
+        <option value="12">Soal PR</option>
+    </select>
+    <br>
+    <hr>
+    
+    <br>
+    <label>Nilai n1 : </label><input type="text" id="input-nilai-1" value="9">
+    <br>
+
+    <label>Show rule? : </label><input type="checkbox" id="showrule" checked="checked"/>
+
+    <button onclick="SelectSoal();">Execute</button>
+    <h2 id="nomor-soal"></h2>
+    <table id="matrix">
+    </table>
+</body>
+</html>
