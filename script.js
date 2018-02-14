@@ -86,6 +86,33 @@ function SelectSoal()
             case 1:
                 Soal0201(nilai, rule);
                 break;
+            case 2:
+                Soal0202(nilai, rule);
+                break;
+            case 3:
+                Soal0203(nilai, rule);
+                break;
+            case 4:
+                Soal0204(nilai, rule);
+                break;
+            case 5:
+                Soal0205(nilai, rule);
+                break;
+            case 6:
+                Soal0206(nilai, rule);
+                break;
+            case 7:
+                Soal0207(nilai, rule);
+                break;
+            case 8:
+                Soal0208(nilai, rule);
+                break;
+            case 9:
+                Soal0209(nilai, rule);
+                break;
+            case 10:
+                Soal0210(nilai, rule);
+                break;
             default:
                 showNoEntry();
                 break;
