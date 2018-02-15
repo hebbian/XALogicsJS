@@ -117,6 +117,42 @@ function SelectSoal()
                 showNoEntry();
                 break;
         }
+    } else if (logic == 3) {
+        switch (soal) {
+            case 1:
+                Soal0301(nilai, rule);
+                break;
+            case 2:
+                Soal0302(nilai, rule);
+                break;
+            case 3:
+                Soal0303(nilai, rule);
+                break;
+            case 4:
+                Soal0304(nilai, rule);
+                break;
+            case 5:
+                Soal0305(nilai, rule);
+                break;
+            case 6:
+                Soal0306(nilai, rule);
+                break;
+            case 7:
+                Soal0307(nilai, rule);
+                break;
+            case 8:
+                Soal0308(nilai, rule);
+                break;
+            case 9:
+                Soal0309(nilai, rule);
+                break;
+            case 10:
+                Soal0310(nilai, rule);
+                break;
+            default:
+                showNoEntry();
+                break;
+        }
     } else {
         showNoEntry();
     }
