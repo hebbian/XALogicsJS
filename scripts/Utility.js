@@ -29,6 +29,7 @@ function printArray(arr, con=false)
     return result;
 }
 
+// Create array 2D 
 function arraySetLength(n1, n2, val=""){
     var arr2 = [];
     for (let I = 0; I < n1; I++) {
@@ -41,10 +42,19 @@ function arraySetLength(n1, n2, val=""){
     return arr2;
 }
 
+// Create array 2D using ES6
 function arraySetLengthES6(n1, n2, val="") {
+    // Create variable arr with length n1, and fill it with val
     var arr = new Array(n1).fill(val);
+
+    // Loop arr
     for (idx in arr) {
+
+        // Create array on each arr index (idx) with length n2,
+        // and fill it with val
         arr[idx] = new Array(n2).fill(val);
     }
+    
+    // return variable arr
     return arr;
 }

@@ -8,16 +8,16 @@ function SoalPR(n, rule){
         for (let J = 0; J < n; J++) {
 
             if (I == J) { // right diagonal
-                arrC.push(I * 2 + 1);
+                arrC.push(I * 2 + 1); //1, 3, 5 ...
 
             } else if (I + J == n - 1) { // left diagonal
-                arrC.push(n + J - I);
+                arrC.push(n + J - I); // 17, 15, 13 ...
 
             } else if ( I == (n - 1) / 2) { // horizontal // i == 4
-                arrC.push(J * 2 + 1);
+                arrC.push(J * 2 + 1); // 1, 3, 5 ...
 
             } else if ( J == (n - 1) / 2) { // vertical // j == 4
-                arrC.push(I * 2 + 1);
+                arrC.push(I * 2 + 1); // 1, 3, 5 ...
 
             } else {
                 arrC.push("");
