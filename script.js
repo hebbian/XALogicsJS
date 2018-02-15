@@ -72,10 +72,10 @@ function SelectSoal()
                 Soal0110(nilai, rule);
                 break;
             case 11:
-                SoalPostTest(nilai, rule);
+                Soal01PostTest(nilai, rule);
                 break;
             case 12:
-                SoalPR(nilai, rule);
+                Soal01PR(nilai, rule);
                 break;
             default:
                 showNoEntry()
@@ -112,6 +112,12 @@ function SelectSoal()
                 break;
             case 10:
                 Soal0210(nilai, rule);
+                break;
+            case 11:
+                Soal02PostTest(nilai, rule);
+                break;
+            case 12:
+                Soal02PR(nilai, rule);
                 break;
             default:
                 showNoEntry();

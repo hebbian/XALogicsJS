@@ -11,7 +11,7 @@ function Soal0208(n, rule) {
                 arrP[I][J] = odd;
             } else if(I + J == n - 1) { // left diagonal
                 arrP[I][J] = even;
-            } else if (I > J && I + J < n -1) { // Triangle A
+            } else if (I > J && I + J < n - 1) { // Triangle A
                 arrP[I][J] = "A";
             } else if (J > I && I + J >= n) { // Triangle B
                 arrP[I][J] = "B";

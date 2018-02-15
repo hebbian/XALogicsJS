@@ -1,4 +1,4 @@
-function SoalPR(n, rule){
+function Soal01PR(n, rule){
     var txtNoSoal = document.getElementById("nomor-soal");
     txtNoSoal.innerHTML = "Bootcamp JS: Logic 01 Soal PR";
     var matrix = document.getElementById("matrix");

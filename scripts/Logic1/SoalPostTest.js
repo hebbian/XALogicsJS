@@ -1,4 +1,4 @@
-function SoalPostTest(n, rule){
+function Soal01PostTest(n, rule){
     var txtNoSoal = document.getElementById("nomor-soal");
     txtNoSoal.innerHTML = "Bootcamp JS: Logic 01 Soal Post Test";
     var matrix = document.getElementById("matrix");
