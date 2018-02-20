@@ -149,6 +149,54 @@ function SelectSoal()
             case 10:
                 Soal0310(nilai, rule);
                 break;
+            case 11:
+                Soal03PostTest(nilai, rule);
+                break;
+            case 12:
+                Soal03PR(nilai, rule);
+                break;
+            default:
+                showNoEntry();
+                break;
+        }
+    } else if (logic == 4) {
+        switch (soal) {
+            case 1:
+                Soal0401(nilai, rule);
+                break;
+            case 2:
+                Soal0402(nilai, rule);
+                break;
+            case 3:
+                Soal0403(nilai, rule);
+                break;
+            case 4:
+                Soal0404(nilai, rule);
+                break;
+            case 5:
+                Soal0405(nilai, rule);
+                break;
+            case 6:
+                Soal0406(nilai, rule);
+                break;
+            case 7:
+                Soal0407(nilai, rule);
+                break;
+            case 8:
+                Soal0408(nilai, rule);
+                break;
+            case 9:
+                Soal0409(nilai, rule);
+                break;
+            case 10:
+                Soal0410(nilai, rule);
+                break;
+            case 11:
+                Soal04PostTest(nilai, rule);
+                break;
+            case 12:
+                Soal04PR(nilai, rule);
+                break;
             default:
                 showNoEntry();
                 break;
