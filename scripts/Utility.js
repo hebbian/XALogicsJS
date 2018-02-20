@@ -58,3 +58,23 @@ function arraySetLengthES6(n1, n2, val="") {
     // return variable arr
     return arr;
 }
+
+function arrFibo2(n) {
+    var result = new Array(n);
+    for (var i=0;i<n;i++) {
+        if (i>1) {
+            result[i] = result[i - 2] + result[i - 1];
+        } else {
+            result[i]=1;
+        }
+    }
+    return result;
+}
+
+function createAlphabetArray() {
+    var alphabet = [];
+    for (var i=65; i<91; i++) {
+        alphabet.push(String.fromCharCode(i));
+    }
+    return alphabet;
+}

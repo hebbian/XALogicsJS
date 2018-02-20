@@ -3,6 +3,7 @@ window.onload = function()
     var currLogic = localStorage.getItem("currLogic");
     var currSoal = localStorage.getItem("currSoal");
     var currNilai1 = localStorage.getItem("currNilai1");
+    var currNilai2 = localStorage.getItem("currNilai2");
     var rule = localStorage.getItem("showRule");
 
     if(currLogic != null){
@@ -17,6 +18,10 @@ window.onload = function()
         document.getElementById("input-nilai-1").value = currNilai1;
     }
 
+    if(currNilai2 != null){
+        document.getElementById("input-nilai-2").value = currNilai2;
+    }
+
     if(rule != null){
         document.getElementById("showrule").value = rule;
     }
@@ -27,11 +32,13 @@ function SelectSoal()
     var logic = parseInt(document.getElementById("input-logic").value);
     var soal = parseInt(document.getElementById("input-soal").value);
     var nilai = parseInt(document.getElementById("input-nilai-1").value);
+    var nilai2 = parseInt(document.getElementById("input-nilai-2").value);
     var rule = document.getElementById("showrule").checked;
 
     console.log("Selected Logic : " + logic);
     console.log("Selected Soal: " + soal)
     console.log("nilai.value : " + nilai);
+    console.log("nilai2.value : " + nilai2);
     console.log("============================")
 
     function showNoEntry() {
@@ -123,6 +130,51 @@ function SelectSoal()
                 showNoEntry();
                 break;
         }
+    } else if (logic == 3) {
+        switch (soal) {
+            case 7:
+                Soal0307(nilai, rule);
+                break;
+            case 12:
+                Soal03PR(nilai, rule);
+                break;
+            default:
+                showNoEntry();
+                break;
+        }
+    } else if (logic == 4) {
+        switch (soal) {
+            case 1:
+                Soal0401(nilai, rule);
+                break;
+            case 2:
+                Soal0402(nilai, rule);
+                break;
+            case 3:
+                Soal0403(nilai, rule);
+                break;
+            case 4:
+                Soal0404(nilai, rule);
+                break;
+            case 5:
+                Soal0405(nilai, rule);
+                break;
+            case 6:
+                Soal0406(nilai, rule);
+                break;
+            case 7:
+                Soal0407(nilai, rule);
+                break;
+            case 8:
+                Soal0408(nilai, rule);
+                break;
+            case 9:
+                Soal0409(nilai, nilai2, rule);
+                break;
+            default:
+                showNoEntry();
+                break;
+        }
     } else {
         showNoEntry();
     }
@@ -130,5 +182,6 @@ function SelectSoal()
     localStorage.setItem('currLogic', logic);
     localStorage.setItem('currSoal', soal);
     localStorage.setItem('currNilai1', nilai);
+    localStorage.setItem('currNilai2', nilai2);
     localStorage.setItem('showRule', rule);
 }
