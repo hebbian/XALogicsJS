@@ -48,3 +48,20 @@ function arraySetLengthES6(n1, n2, val="") {
     }
     return arr;
 }
+
+function factorialSquare(n) {
+    let result = 0;
+    for (var i=1;i<=n;i++) {
+        result += i;
+    }
+    return result;
+}
+
+function factorialTriangle(n) {
+    let result = 0;
+    for (var i=1; i<=n; i++) {
+        let aw = ((i - 1) * 2) + 1;
+        result += aw;
+    }
+    return result;
+}

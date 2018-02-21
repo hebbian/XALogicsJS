@@ -201,6 +201,22 @@ function SelectSoal()
                 showNoEntry();
                 break;
         }
+    } else if (logic == 5) {
+        switch (soal) {
+            case 1:
+                Soal0501(nilai, rule);
+                break;
+            case 2:
+                Soal0502(nilai, rule);
+                break;
+            case 3:
+                Soal0503(nilai, rule);
+                break;
+        
+            default:
+                break;
+        }
+
     } else {
         showNoEntry();
     }
