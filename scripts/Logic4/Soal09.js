@@ -1,10 +1,9 @@
-function Soal0409(n1, n2, rule) {
+function Soal04PostTest(n1, n2, rule) {
     var txtNoSoal = document.getElementById("nomor-soal");
-    txtNoSoal.innerHTML = "Bootcamp JS: Logic 04 Soal 09";
+    txtNoSoal.innerHTML = "Bootcamp JS: Logic 04 Soal Post Test";
     var matrix = document.getElementById("matrix");
     var arrayLength = n1 * n2 - n2 + 1;
     var arrP = arraySetLengthES6(n1, arrayLength, "");
-    console.log(arrP[0].length);
     var left = parseInt(n1/2) + 1;
     var right = left;
     var number = 1;

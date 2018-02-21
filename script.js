@@ -171,6 +171,24 @@ function SelectSoal()
             case 9:
                 Soal0409(nilai, nilai2, rule);
                 break;
+            case 11:
+                Soal04PostTest(nilai, rule);
+                break;
+            case 12:
+                Soal04PR(nilai, rule);
+                break;
+            default:
+                showNoEntry();
+                break;
+        }
+    } else if (logic == 6) {
+        switch (soal) {
+            case 1:
+                Soal0601(nilai, rule);
+                break;
+            case 6:
+                Soal06061(nilai, rule);
+                break;
             default:
                 showNoEntry();
                 break;
